@@ -45,18 +45,18 @@ section {
 }
 
 /* Alignment change on at least one section */
-#About {
+#about {
   text-align: center;
 }
 
 /* Experience list items styled as blocks */
-#Experience ul {
+#experience ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-#Experience li {
+#experience li {
   background-color: #eef3fb;
   border-left: 5px solid #1a73e8;
   border-radius: 6px;
@@ -65,7 +65,7 @@ section {
 }
 
 /* Connect links styled */
-#Connect a {
+#connect a {
   display: inline-block;
   background-color: #1a73e8;
   color: #ffffff;
@@ -75,7 +75,7 @@ section {
   margin: 5px;
 }
 
-#Connect a:hover {
+#connect a:hover {
   background-color: #0b3d91;
 }
 
@@ -121,13 +121,37 @@ nav a:hover {
 }
 
 /* Connect layout with Flexbox */
-#Connect {
+#connect {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
 
-#Connect h2 {
+#connect h2 {
   flex-basis: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #666666;
+}
+
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#skills li {
+  background-color: #eef3fb;
+  border: 2px solid #1a73e8;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-weight: 600;
+  color: #0b3d91;
 }
