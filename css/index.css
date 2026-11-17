@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -49,19 +50,23 @@ section {
   text-align: center;
 }
 
-/* Experience list items styled as blocks */
+/* Experience list reset */
 #experience ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+/* Experience list items styled as blocks, laid out with Flexbox */
 #experience li {
   background-color: #eef3fb;
   border-left: 5px solid #1a73e8;
   border-radius: 6px;
   padding: 15px;
   margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* Connect links styled */
@@ -100,12 +105,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Experience layout with Flexbox */
-#Experience li {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
 .job-title {
   font-weight: 600;
