@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body background color, default text color, font family */
+body {
+  background-color: #f4f6f8;
+  color: #333333;
+  font-family: 'Poppins', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+/* A new look for your name at the top */
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1a73e8;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 20px 0;
+}
+
+/* Heading font size, weight, and color */
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #0b3d91;
+  border-bottom: 2px solid #1a73e8;
+  padding-bottom: 6px;
+  margin-top: 0;
+}
+
+/* Padding/margin between sections */
+section {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  scroll-margin-top: 70px;
+}
+
+/* Alignment change on at least one section */
+#About {
+  text-align: center;
+}
+
+/* Experience list items styled as blocks */
+#Experience ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#Experience li {
+  background-color: #eef3fb;
+  border-left: 5px solid #1a73e8;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+/* Connect links styled */
+#Connect a {
+  display: inline-block;
+  background-color: #1a73e8;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+#Connect a:hover {
+  background-color: #0b3d91;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #0b3d91;
+  padding: 12px;
+  position: sticky; /* optional: keeps nav visible while scrolling */
+  top: 0;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Experience layout with Flexbox */
+#Experience li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.job-title {
+  font-weight: 600;
+}
+
+.job-dates {
+  color: #666666;
+}
+
+.job-description {
+  flex-basis: 100%;
+  margin: 8px 0 0;
+}
+
+/* Connect layout with Flexbox */
+#Connect {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#Connect h2 {
+  flex-basis: 100%;
+}
