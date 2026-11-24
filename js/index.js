@@ -33,7 +33,7 @@ function toggleMessageSection(){
   if (messageList.children.length === 0) {
     messageSection.style.display = "none";
   } else {
-    messageSection.style.display = "block"
+    messageSection.style.display = "block";
   }
 }
 //Hide message when the page first load
@@ -89,7 +89,6 @@ messageForm.addEventListener("submit", function(event){
   messageList.appendChild(newMessage);
 
   toggleMessageSection();// show the section now that it has a message
-
 
   event.target.reset();
 });

@@ -87,8 +87,9 @@ section {
 /* Navigation */
 nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 8px 20px;
   background-color: #0b3d91;
   padding: 12px;
   position: sticky; /* optional: keeps nav visible while scrolling */
@@ -220,10 +221,12 @@ footer {
     width: 100%;
     padding: 14px;
     font-size: 1.1rem;
+    min-height: 44px;
   }
 
   #messages li button {
     padding: 10px 16px;
     font-size: 1rem;
+    min-height: 44px;
   }
 }
