@@ -154,3 +154,76 @@ footer {
   font-weight: 600;
   color: #0b3d91;
 }
+
+/* Message form */
+#leave_message form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+}
+
+#leave_message label {
+  font-weight: bold;
+}
+
+#leave_message input,
+#leave_message textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#leave_message textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+#leave_message button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  align-self: flex-start;
+}
+
+/* Messages list */
+#messages li {
+  margin-bottom: 12px;
+}
+
+#messages li button {
+  margin-left: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+/* Mobile: bigger tap targets */
+@media (max-width: 600px) {
+  #leave_message form {
+    max-width: 100%;
+  }
+
+  #leave_message input,
+  #leave_message textarea {
+    padding: 14px;
+    font-size: 1.1rem;
+  }
+
+  #leave_message button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+  }
+
+  #messages li button {
+    padding: 10px 16px;
+    font-size: 1rem;
+  }
+}
